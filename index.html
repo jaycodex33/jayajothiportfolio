@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jayajothi - Aspiring Data Analyst & Python/SQL Developer Portfolio. Explore data analytics projects, interactive dashboards, and business insights.">
+    <meta name="keywords" content="Jayajothi, Data Analyst, Python, SQL, Power BI, Portfolio, Tableau, Data Science, Beginner">
+    <meta name="author" content="Jayajothi">
+    <title>Jayajothi | Aspiring Data Analyst & Python Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Boxicons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="dark-theme">
+    <!--===== SCROLL PROGRESS BAR =====-->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-grid">
+            <a href="#home" class="nav__logo">
+                <span class="logo__brand">Jayajothi</span><span class="logo__dot">.</span><span class="logo__badge">data()</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link"><i class='bx bx-home-alt nav__icon'></i> Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link"><i class='bx bx-user nav__icon'></i> About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link"><i class='bx bx-code-alt nav__icon'></i> Skills</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link"><i class='bx bx-book-open nav__icon'></i> Timeline</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link"><i class='bx bx-folder nav__icon'></i> Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link"><i class='bx bx-envelope nav__icon'></i> Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme Change Button -->
+                <button class="theme-toggle" id="theme-button" title="Toggle Theme" aria-label="Toggle Theme">
+                    <i class='bx bx-sun' id="theme-icon"></i>
+                </button>
+
+                <!-- Resume Modal Trigger -->
+                <button class="nav__cta button button--small" id="nav-resume-btn">
+                    <i class='bx bx-file'></i> Resume
+                </button>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME HERO =====-->
+        <section class="home" id="home">
+            <!-- Dynamic Particles Canvas -->
+            <canvas id="particles-canvas" class="home__canvas"></canvas>
+
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <div class="home__badge">
+                        <span class="badge-dot pulse-animation"></span>
+                        <span class="badge-text">Available for Entry-Level Roles & Internships</span>
+                    </div>
+
+                    <h1 class="home__title">
+                        Hello, I'm <br>
+                        <span class="gradient-text">Jayajothi</span>
+                    </h1>
+
+                    <h2 class="home__role">
+                        I am an <span class="typing-text" id="typing-text"></span><span class="typing-cursor">|</span>
+                    </h2>
+
+                    <p class="home__description">
+                        I am an M.Sc. IT student and an aspiring Data Analyst. I am looking for an opportunity to start my career, learn new skills and grow professionally.
+                    </p>
+
+                    <div class="home__cta-group">
+                        <a href="#work" class="button button--primary">
+                            <span>Explore Projects</span>
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                        <button class="button button--ghost" id="hero-resume-btn">
+                            <i class='bx bx-file'></i>
+                            <span>View Resume</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Copy Email & Direct Links -->
+                    <div class="home__quick-row" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.25rem;">
+                        <button class="quick-copy-email-btn" id="copy-email-hero" title="Click to copy email address">
+                            <i class='bx bx-copy'></i>
+                            <span>jayajothi.it@gmail.com</span>
+                        </button>
+                        <a href="https://wa.me/?text=Hello%20Jayajothi,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="quick-copy-email-btn" title="Chat on WhatsApp">
+                            <i class='bx bxl-whatsapp' style="color: #25d366;"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-label">Connect:</span>
+                        <a href="https://www.linkedin.com/in/jay33z" target="_blank" rel="noopener noreferrer" class="home__social-icon" title="LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="home__social-icon" title="GitHub">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="mailto:jayajothi.it@gmail.com" class="home__social-icon" title="Email">
+                            <i class='bx bx-envelope'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__visual">
+                    <div class="home__blob-wrapper">
+                        <div class="glow-sphere"></div>
+                        <!-- 3D Gyroscopic Orbital Rings -->
+                        <div class="orbit-ring orbit-ring-1"></div>
+                        <div class="orbit-ring orbit-ring-2"></div>
+                        <div class="orbit-ring orbit-ring-3"></div>
+                        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path class="blob-path" d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                                <image class="home__blob-img" x="0" y="0" width="479" height="467" preserveAspectRatio="xMidYMid meet" href="assets/img/perfil1.png"/>
+                            </g>
+                        </svg>
+
+                        <!-- Floating Tech Tags for Advanced Look -->
+                        <div class="floating-badge badge-top-right">
+                            <i class='bx bxl-python'></i>
+                            <span>Python & Pandas</span>
+                        </div>
+                        <div class="floating-badge badge-bottom-left">
+                            <i class='bx bxs-data'></i>
+                            <span>SQL Queries</span>
+                        </div>
+                        <div class="floating-badge badge-bottom-right">
+                            <i class='bx bx-chip'></i>
+                            <span>Web Dev & IoT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Stats Strip -->
+            <div class="home__stats bd-grid">
+                <div class="stat__card" data-tilt="true">
+                    <span class="stat__number" style="font-size: 1.5rem; color: var(--secondary);">Beginner</span>
+                    <span class="stat__label">Proficiency Level</span>
+                </div>
+                <div class="stat__card" data-tilt="true">
+                    <span class="stat__number" data-target="6">6+</span>
+                    <span class="stat__label">Data & Code Projects</span>
+                </div>
+                <div class="stat__card" data-tilt="true">
+                    <span class="stat__number" data-target="5">5+</span>
+                    <span class="stat__label">Analytical Toolsets</span>
+                </div>
+                <div class="stat__card" data-tilt="true">
+                    <span class="stat__number" style="font-size: 1.5rem; color: #10b981;">100%</span>
+                    <span class="stat__label">Immediate Joiner</span>
+                </div>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <div class="section__header">
+                <span class="section__subtitle">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about__container bd-grid">
+                <div class="about__visual">
+                    <div class="about__card-wrapper" data-tilt="true">
+                        <div class="about__img-box">
+                            <img src="assets/img/about.jpeg" alt="Jayajothi" class="about__img">
+                            <div class="about__badge-card">
+                                <i class='bx bx-award'></i>
+                                <div>
+                                    <h4>Beginner / Fresher</h4>
+                                    <p>Ready to Learn & Deliver</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__content">
+                    <h3 class="about__headline">
+                        Transforming Data Into <span class="gradient-text">Actionable Solutions</span>
+                    </h3>
+                    
+                    <p class="about__text">
+                        I completed my <strong>BCA (Bachelor of Computer Applications)</strong> with <strong>63%</strong> and am currently pursuing my <strong>M.Sc. in Information Technology</strong> at St. Joseph's College of Arts and Science (Autonomous), Cuddalore. I am deeply passionate about <strong>Web Development, Python Programming, IoT, and Software Development</strong>. I continuously seek opportunities to learn modern technologies and build innovative solutions that solve real-world problems.
+                    </p>
+
+                    <p class="about__text">
+                        During my BCA, I co-developed an <strong>Event Management System</strong>, gaining valuable teamwork and software development experience. In my M.Sc. program, I have built an <strong>AI Chatbot</strong>, an <strong>Academic Timetable Management System with Notifications</strong>, and an <strong>ESP32-based Smart Current Monitoring IoT Dashboard</strong>. I am now preparing for my <strong>4th-semester industry internship</strong> to contribute to real-world software practices.
+                    </p>
+
+                    <!-- Core Strengths Mini Grid -->
+                    <div class="about__features">
+                        <div class="feature__item">
+                            <i class='bx bx-check-shield feature__icon'></i>
+                            <div>
+                                <h5>Data Cleaning & EDA</h5>
+                                <p>Handling missing values, outlier checks & statistical summaries.</p>
+                            </div>
+                        </div>
+                        <div class="feature__item">
+                            <i class='bx bx-line-chart feature__icon'></i>
+                            <div>
+                                <h5>Interactive Dashboards</h5>
+                                <p>Designing clear visual stories with Power BI & MS Excel.</p>
+                            </div>
+                        </div>
+                        <div class="feature__item">
+                            <i class='bx bx-code-curly feature__icon'></i>
+                            <div>
+                                <h5>Database & SQL Logic</h5>
+                                <p>Writing SELECT queries, JOINS, GROUP BY, and aggregations.</p>
+                            </div>
+                        </div>
+                        <div class="feature__item">
+                            <i class='bx bx-bulb feature__icon'></i>
+                            <div>
+                                <h5>Continuous Learner</h5>
+                                <p>Committed to daily coding practice and mastering data workflows.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Details & CV -->
+                    <div class="about__actions">
+                        <button class="button button--primary" id="about-resume-btn">
+                            <i class='bx bx-file'></i>
+                            <span>View Resume</span>
+                        </button>
+                        <a href="#contact" class="button button--ghost">
+                            <i class='bx bx-conversation'></i>
+                            <span>Discuss Opportunities</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <div class="section__header">
+                <span class="section__subtitle">Proficiency Level: Beginner / Entry-Level Foundations</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+
+            <!-- Beginner Level Banner Notice -->
+            <div class="skills__level-banner bd-grid">
+                <div class="level-banner__badge">
+                    <i class='bx bxs-badge-check'></i>
+                    <span>Beginner Level</span>
+                </div>
+                <div class="level-banner__content">
+                    <h4>Solid Theoretical Foundation & Hands-on Practice</h4>
+                    <p>All skills listed below represent active beginner foundations. I practice writing Python code, optimizing SQL queries, and creating interactive dashboards daily through hands-on projects.</p>
+                </div>
+            </div>
+
+            <!-- Skill Filter Categories -->
+            <div class="skills__tabs bd-grid">
+                <button class="skills__tab active" data-tab="all">All Skills</button>
+                <button class="skills__tab" data-tab="programming">Programming & DB</button>
+                <button class="skills__tab" data-tab="tools">Web & Developer Tools</button>
+            </div>
+
+            <div class="skills__container bd-grid">
+                <!-- Skill Card 1: Python -->
+                <div class="skill__card" data-tilt="true" data-category="analytics programming">
+                    <div class="skill__header">
+                        <div class="skill__icon-box python-box">
+                            <i class='bx bxl-python'></i>
+                        </div>
+                        <div>
+                            <h4 class="skill__name">Python</h4>
+                            <span class="skill__tier">Data Science Core</span>
+                        </div>
+                        <span class="skill__badge level-beginner"><i class='bx bx-check-circle'></i> Beginner</span>
+                    </div>
+
+                    <div class="skill__level-meter">
+                        <span class="meter-tier active"><i class='bx bx-check'></i> Beginner</span>
+                        <span class="meter-tier">Intermediate</span>
+                        <span class="meter-tier">Advanced</span>
+                    </div>
+
+                    <div class="skill__track">
+                        <div class="skill__bar" style="width: 60%;"></div>
+                    </div>
+
+                    <p class="skill__desc">Pandas DataFrames, NumPy Arrays, Data Cleaning, Matplotlib, Loops & Functions</p>
+
+                    <div class="skill__tags">
+                        <span class="skill__tag">Pandas</span>
+                        <span class="skill__tag">NumPy</span>
+                        <span class="skill__tag">Matplotlib</span>
+                        <span class="skill__tag">Data Cleaning</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2: SQL -->
+                <div class="skill__card" data-tilt="true" data-category="analytics programming">
+                    <div class="skill__header">
+                        <div class="skill__icon-box sql-box">
+                            <i class='bx bxs-data'></i>
+                        </div>
+                        <div>
+                            <h4 class="skill__name">SQL & Relational DB</h4>
+                            <span class="skill__tier">Queries & Joins</span>
+                        </div>
+                        <span class="skill__badge level-beginner"><i class='bx bx-check-circle'></i> Beginner</span>
+                    </div>
+
+                    <div class="skill__level-meter">
+                        <span class="meter-tier active"><i class='bx bx-check'></i> Beginner</span>
+                        <span class="meter-tier">Intermediate</span>
+                        <span class="meter-tier">Advanced</span>
+                    </div>
+
+                    <div class="skill__track">
+                        <div class="skill__bar" style="width: 65%;"></div>
+                    </div>
+
+                    <p class="skill__desc">MySQL, Relational Schemas, SELECT Queries, INNER / LEFT JOINs, GROUP BY, Aggregations</p>
+
+                    <div class="skill__tags">
+                        <span class="skill__tag">MySQL</span>
+                        <span class="skill__tag">JOINs</span>
+                        <span class="skill__tag">GROUP BY</span>
+                        <span class="skill__tag">Aggregations</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3: PHP & Backend -->
+                <div class="skill__card" data-tilt="true" data-category="programming tools">
+                    <div class="skill__header">
+                        <div class="skill__icon-box php-box">
+                            <i class='bx bxl-php'></i>
+                        </div>
+                        <div>
+                            <h4 class="skill__name">PHP & Backend</h4>
+                            <span class="skill__tier">Server Development</span>
+                        </div>
+                        <span class="skill__badge level-beginner"><i class='bx bx-check-circle'></i> Beginner</span>
+                    </div>
+
+                    <div class="skill__level-meter">
+                        <span class="meter-tier active"><i class='bx bx-check'></i> Beginner</span>
+                        <span class="meter-tier">Intermediate</span>
+                        <span class="meter-tier">Advanced</span>
+                    </div>
+
+                    <div class="skill__track">
+                        <div class="skill__bar" style="width: 65%;"></div>
+                    </div>
+
+                    <p class="skill__desc">Server Scripting, Form Handling, MySQL Database Connectivity, REST APIs & Session Management</p>
+
+                    <div class="skill__tags">
+                        <span class="skill__tag">PHP</span>
+                        <span class="skill__tag">MySQL</span>
+                        <span class="skill__tag">REST APIs</span>
+                        <span class="skill__tag">Server Logic</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 4: IoT & ESP32 -->
+                <div class="skill__card" data-tilt="true" data-category="programming tools">
+                    <div class="skill__header">
+                        <div class="skill__icon-box notebook-box">
+                            <i class='bx bx-chip'></i>
+                        </div>
+                        <div>
+                            <h4 class="skill__name">IoT & ESP32</h4>
+                            <span class="skill__tier">Embedded & Hardware</span>
+                        </div>
+                        <span class="skill__badge level-beginner"><i class='bx bx-check-circle'></i> Beginner</span>
+                    </div>
+
+                    <div class="skill__level-meter">
+                        <span class="meter-tier active"><i class='bx bx-check'></i> Beginner</span>
+                        <span class="meter-tier">Intermediate</span>
+                        <span class="meter-tier">Advanced</span>
+                    </div>
+
+                    <div class="skill__track">
+                        <div class="skill__bar" style="width: 62%;"></div>
+                    </div>
+
+                    <p class="skill__desc">ESP32 Microcontroller, Current Sensors, Microcontroller Programming, Telemetry & Web Dashboards</p>
+
+                    <div class="skill__tags">
+                        <span class="skill__tag">ESP32</span>
+                        <span class="skill__tag">Current Sensors</span>
+                        <span class="skill__tag">IoT Cloud</span>
+                        <span class="skill__tag">Live Data</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 5: HTML5 & CSS3 -->
+                <div class="skill__card" data-tilt="true" data-category="tools">
+                    <div class="skill__header">
+                        <div class="skill__icon-box web-box">
+                            <i class='bx bxl-html5'></i>
+                        </div>
+                        <div>
+                            <h4 class="skill__name">HTML5 & CSS3</h4>
+                            <span class="skill__tier">Frontend Basics</span>
+                        </div>
+                        <span class="skill__badge level-beginner"><i class='bx bx-check-circle'></i> Beginner</span>
+                    </div>
+
+                    <div class="skill__level-meter">
+                        <span class="meter-tier active"><i class='bx bx-check'></i> Beginner</span>
+                        <span class="meter-tier">Intermediate</span>
+                        <span class="meter-tier">Advanced</span>
+                    </div>
+
+                    <div class="skill__track">
+                        <div class="skill__bar" style="width: 65%;"></div>
+                    </div>
+
+                    <p class="skill__desc">Semantic Markup, Responsive Layouts, Flexbox, CSS Grid, Variables & Mobile Optimization</p>
+
+                    <div class="skill__tags">
+                        <span class="skill__tag">Flexbox</span>
+                        <span class="skill__tag">CSS Grid</span>
+                        <span class="skill__tag">Responsive</span>
+                        <span class="skill__tag">Semantic</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 6: JavaScript -->
+                <div class="skill__card" data-tilt="true" data-category="programming tools">
+                    <div class="skill__header">
+                        <div class="skill__icon-box js-box">
+                            <i class='bx bxl-javascript'></i>
+                        </div>
+                        <div>
+                            <h4 class="skill__name">JavaScript</h4>
+                            <span class="skill__tier">Web Scripting</span>
+                        </div>
+                        <span class="skill__badge level-beginner"><i class='bx bx-check-circle'></i> Beginner</span>
+                    </div>
+
+                    <div class="skill__level-meter">
+                        <span class="meter-tier active"><i class='bx bx-check'></i> Beginner</span>
+                        <span class="meter-tier">Intermediate</span>
+                        <span class="meter-tier">Advanced</span>
+                    </div>
+
+                    <div class="skill__track">
+                        <div class="skill__bar" style="width: 50%;"></div>
+                    </div>
+
+                    <p class="skill__desc">DOM Manipulation, Event Listeners, Functions & Arrays, Fetch API, Interactive UI Updates</p>
+
+                    <div class="skill__tags">
+                        <span class="skill__tag">DOM</span>
+                        <span class="skill__tag">Events</span>
+                        <span class="skill__tag">Fetch API</span>
+                        <span class="skill__tag">ES6 Basics</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 7: Git & GitHub -->
+                <div class="skill__card" data-tilt="true" data-category="tools">
+                    <div class="skill__header">
+                        <div class="skill__icon-box git-box">
+                            <i class='bx bxl-git'></i>
+                        </div>
+                        <div>
+                            <h4 class="skill__name">Git & GitHub</h4>
+                            <span class="skill__tier">Version Control</span>
+                        </div>
+                        <span class="skill__badge level-beginner"><i class='bx bx-check-circle'></i> Beginner</span>
+                    </div>
+
+                    <div class="skill__level-meter">
+                        <span class="meter-tier active"><i class='bx bx-check'></i> Beginner</span>
+                        <span class="meter-tier">Intermediate</span>
+                        <span class="meter-tier">Advanced</span>
+                    </div>
+
+                    <div class="skill__track">
+                        <div class="skill__bar" style="width: 62%;"></div>
+                    </div>
+
+                    <p class="skill__desc">Git Init, Clone, Commit, Push, Pull, Branching, GitHub Repo Management, Markdown Documentation</p>
+
+                    <div class="skill__tags">
+                        <span class="skill__tag">Git Commits</span>
+                        <span class="skill__tag">Branching</span>
+                        <span class="skill__tag">GitHub</span>
+                        <span class="skill__tag">Markdown</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 8: Jupyter & VS Code -->
+                <div class="skill__card" data-tilt="true" data-category="analytics tools">
+                    <div class="skill__header">
+                        <div class="skill__icon-box php-box">
+                            <i class='bx bx-terminal'></i>
+                        </div>
+                        <div>
+                            <h4 class="skill__name">Jupyter & VS Code</h4>
+                            <span class="skill__tier">Analytics Workspace</span>
+                        </div>
+                        <span class="skill__badge level-beginner"><i class='bx bx-check-circle'></i> Beginner</span>
+                    </div>
+
+                    <div class="skill__level-meter">
+                        <span class="meter-tier active"><i class='bx bx-check'></i> Beginner</span>
+                        <span class="meter-tier">Intermediate</span>
+                        <span class="meter-tier">Advanced</span>
+                    </div>
+
+                    <div class="skill__track">
+                        <div class="skill__bar" style="width: 70%;"></div>
+                    </div>
+
+                    <p class="skill__desc">Notebook Workflows, Google Colab, Markdown Cell Notes, VS Code Debugging, CSV Export</p>
+
+                    <div class="skill__tags">
+                        <span class="skill__tag">Jupyter</span>
+                        <span class="skill__tag">VS Code</span>
+                        <span class="skill__tag">Google Colab</span>
+                        <span class="skill__tag">CSV Export</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== EDUCATION & TIMELINE =====-->
+        <section class="timeline section" id="education">
+            <div class="section__header">
+                <span class="section__subtitle">Academic Background & Qualifications</span>
+                <h2 class="section-title">Education & Milestones</h2>
+            </div>
+
+            <div class="timeline__container bd-grid">
+                <!-- Column 1: College & Higher Degrees -->
+                <div class="timeline__column">
+                    <h3 class="timeline__column-title"><i class='bx bx-graduation'></i> Higher Education</h3>
+                    
+                    <!-- Milestone 1: M.Sc. IT -->
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card" data-tilt="true">
+                            <span class="timeline__period">June 2025 - March 2027</span>
+                            <h4 class="timeline__title">M.Sc. Information Technology</h4>
+                            <span class="timeline__institution">St. Joseph's College of Arts and Science (Autonomous), Cuddalore</span>
+                            <p class="timeline__desc">Pursuing postgraduate studies focusing on advanced software frameworks, database systems, data analytics, and modern IT architecture.</p>
+                            <span class="timeline__badge" style="display: inline-block; margin-top: 0.5rem; font-size: 0.75rem; padding: 0.25rem 0.75rem; border-radius: 1rem; background: rgba(34, 211, 238, 0.15); color: var(--secondary); border: 1px solid rgba(34, 211, 238, 0.3); font-weight: 600;">
+                                <i class='bx bx-loader-circle'></i> Currently Pursuing
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2: BCA -->
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card" data-tilt="true">
+                            <span class="timeline__period">June 2022 - March 2025</span>
+                            <h4 class="timeline__title">BCA (Bachelor of Computer Applications)</h4>
+                            <span class="timeline__institution">St. Joseph's College of Arts and Science (Autonomous), Cuddalore</span>
+                            <p class="timeline__desc">Graduated with a solid foundation in computer applications, programming in Python/C++, Relational Database Management Systems (RDBMS/SQL), and web technologies.</p>
+                            <span class="timeline__badge" style="display: inline-block; margin-top: 0.5rem; font-size: 0.75rem; padding: 0.25rem 0.75rem; border-radius: 1rem; background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); font-weight: 600;">
+                                <i class='bx bx-check-circle'></i> Percentage: 63%
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Schooling & Higher Secondary -->
+                <div class="timeline__column">
+                    <h3 class="timeline__column-title"><i class='bx bx-book-bookmark'></i> Schooling & Foundation</h3>
+                    
+                    <!-- Milestone 3: HSC -->
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card" data-tilt="true">
+                            <span class="timeline__period">June 2022 - March 2023</span>
+                            <h4 class="timeline__title">HSC (12th Grade)</h4>
+                            <span class="timeline__institution">Mother Theresa Matriculation Higher Secondary School, Sathipattu</span>
+                            <p class="timeline__desc">Completed Higher Secondary curriculum with strong analytical grounding in Computer Science, Mathematics, Physics, and logical problem solving.</p>
+                            <span class="timeline__badge" style="display: inline-block; margin-top: 0.5rem; font-size: 0.75rem; padding: 0.25rem 0.75rem; border-radius: 1rem; background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); font-weight: 600;">
+                                <i class='bx bx-check-circle'></i> Percentage: 68%
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 4: SSLC -->
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card" data-tilt="true">
+                            <span class="timeline__period">June 2020 - March 2021</span>
+                            <h4 class="timeline__title">SSLC (10th Grade)</h4>
+                            <span class="timeline__institution">Mother Theresa Matriculation Higher Secondary School, Sathipattu</span>
+                            <p class="timeline__desc">Completed Secondary School Leaving Certificate establishing fundamental disciplines in Science, Mathematics, and Computer fundamentals.</p>
+                            <span class="timeline__badge" style="display: inline-block; margin-top: 0.5rem; font-size: 0.75rem; padding: 0.25rem 0.75rem; border-radius: 1rem; background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); font-weight: 600;">
+                                <i class='bx bx-check-circle'></i> Percentage: 66%
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications Strip -->
+            <div class="skills__level-banner bd-grid" style="margin-top: 3rem;">
+                <div class="level-banner__badge" style="background: rgba(99, 102, 241, 0.15); color: var(--primary); border-color: rgba(99, 102, 241, 0.35);">
+                    <i class='bx bx-certification'></i>
+                    <span>Certifications</span>
+                </div>
+                <div class="level-banner__content">
+                    <h4>Specialized Technical Credentials</h4>
+                    <p>• <strong>Data Analysis with Python:</strong> Data cleaning, Pandas DataFrames, exploratory statistical analysis, and Seaborn charts.<br>
+                    • <strong>SQL for Relational Database Management:</strong> Complex joins, grouping aggregations, indexing, and analytical subqueries.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK / PROJECTS =====-->
+        <section class="work section" id="work">
+            <div class="section__header">
+                <span class="section__subtitle">Academic & Practical Projects</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="work__filters bd-grid">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="msc">M.Sc. Projects</button>
+                <button class="filter-btn" data-filter="iot">IoT & Hardware</button>
+                <button class="filter-btn" data-filter="web">Web & Software</button>
+            </div>
+
+            <div class="work__container bd-grid">
+                <!-- Project 1: Smart Current Monitoring System (M.Sc. 3rd Sem) -->
+                <div class="work__card" data-tilt="true" data-category="msc iot web">
+                    <div class="work__img-wrapper">
+                        <img src="assets/img/work1.jpg" alt="Smart Current Monitoring System" class="work__img">
+                        <div class="work__overlay">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="work__action-btn" title="View Code"><i class='bx bxl-github'></i></a>
+                            <button class="work__action-btn open-project-modal" data-id="1" title="View Case Study"><i class='bx bx-search-alt'></i></button>
+                        </div>
+                    </div>
+                    <div class="work__details">
+                        <span class="work__tag">M.Sc. 3rd Sem • IoT & Web</span>
+                        <h3 class="work__title">Smart Current Monitoring System (IoT)</h3>
+                        <p class="work__desc">Real-time electricity consumption tracker developed using ESP32, current sensors, PHP, and MySQL with an interactive live web analytics dashboard.</p>
+                        <div class="work__tech">
+                            <span>ESP32</span>
+                            <span>IoT</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Live Dashboard</span>
+                        </div>
+                        <button class="work__btn-details open-project-modal" data-id="1">
+                            <i class='bx bx-file-find'></i> View Case Study
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2: AI Chatbot (M.Sc. 1st Sem) -->
+                <div class="work__card" data-tilt="true" data-category="msc web">
+                    <div class="work__img-wrapper">
+                        <img src="assets/img/work2.jpg" alt="AI Chatbot" class="work__img">
+                        <div class="work__overlay">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="work__action-btn" title="View Code"><i class='bx bxl-github'></i></a>
+                            <button class="work__action-btn open-project-modal" data-id="2" title="View Case Study"><i class='bx bx-search-alt'></i></button>
+                        </div>
+                    </div>
+                    <div class="work__details">
+                        <span class="work__tag">M.Sc. 1st Sem • Web Development</span>
+                        <h3 class="work__title">AI Chatbot Web Application</h3>
+                        <p class="work__desc">Interactive conversational AI chatbot built with HTML, CSS, JavaScript, PHP, and MySQL for automated query resolution and chat history storage.</p>
+                        <div class="work__tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <button class="work__btn-details open-project-modal" data-id="2">
+                            <i class='bx bx-file-find'></i> View Case Study
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3: Academic Timetable System (M.Sc. 2nd Sem) -->
+                <div class="work__card" data-tilt="true" data-category="msc web">
+                    <div class="work__img-wrapper">
+                        <img src="assets/img/work3.jpg" alt="Academic Timetable Management System" class="work__img">
+                        <div class="work__overlay">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="work__action-btn" title="View Code"><i class='bx bxl-github'></i></a>
+                            <button class="work__action-btn open-project-modal" data-id="3" title="View Case Study"><i class='bx bx-search-alt'></i></button>
+                        </div>
+                    </div>
+                    <div class="work__details">
+                        <span class="work__tag">M.Sc. 2nd Sem • System Design</span>
+                        <h3 class="work__title">Academic Timetable & Notification System</h3>
+                        <p class="work__desc">Institutional schedule management application featuring automated alert notifications to improve timetable organization and student communication.</p>
+                        <div class="work__tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                            <span>Alert System</span>
+                            <span>Scheduling</span>
+                        </div>
+                        <button class="work__btn-details open-project-modal" data-id="3">
+                            <i class='bx bx-file-find'></i> View Case Study
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 4: Event Management System (BCA Group Project) -->
+                <div class="work__card" data-tilt="true" data-category="web">
+                    <div class="work__img-wrapper">
+                        <img src="assets/img/work4.jpg" alt="Event Management System" class="work__img">
+                        <div class="work__overlay">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="work__action-btn" title="View Code"><i class='bx bxl-github'></i></a>
+                            <button class="work__action-btn open-project-modal" data-id="4" title="View Case Study"><i class='bx bx-search-alt'></i></button>
+                        </div>
+                    </div>
+                    <div class="work__details">
+                        <span class="work__tag">BCA Capstone • Group Project</span>
+                        <h3 class="work__title">Full-Stack Event Management System</h3>
+                        <p class="work__desc">Collaborative software development project managing event bookings, user registrations, venue reservations, and relational database records.</p>
+                        <div class="work__tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Teamwork</span>
+                            <span>HTML/CSS</span>
+                            <span>BCA Project</span>
+                        </div>
+                        <button class="work__btn-details open-project-modal" data-id="4">
+                            <i class='bx bx-file-find'></i> View Case Study
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 5: Interactive 3D Portfolio -->
+                <div class="work__card" data-tilt="true" data-category="web">
+                    <div class="work__img-wrapper">
+                        <img src="assets/img/work5.jpg" alt="Developer Portfolio" class="work__img">
+                        <div class="work__overlay">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="work__action-btn" title="View Code"><i class='bx bxl-github'></i></a>
+                            <button class="work__action-btn open-project-modal" data-id="5" title="View Case Study"><i class='bx bx-search-alt'></i></button>
+                        </div>
+                    </div>
+                    <div class="work__details">
+                        <span class="work__tag">Frontend & 3D Engineering</span>
+                        <h3 class="work__title">Interactive 3D Responsive Portfolio</h3>
+                        <p class="work__desc">Modern personal portfolio built with vanilla web technologies, featuring real-time 3D mouse tilt, 3D particle constellation, and light/dark themes.</p>
+                        <div class="work__tech">
+                            <span>HTML5</span>
+                            <span>CSS3 3D</span>
+                            <span>Vanilla JS</span>
+                            <span>Canvas 3D</span>
+                        </div>
+                        <button class="work__btn-details open-project-modal" data-id="5">
+                            <i class='bx bx-file-find'></i> View Case Study
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 6: 4th Semester Industry Internship -->
+                <div class="work__card" data-tilt="true" data-category="msc web iot">
+                    <div class="work__img-wrapper">
+                        <img src="assets/img/work6.jpg" alt="M.Sc. 4th Semester Internship" class="work__img">
+                        <div class="work__overlay">
+                            <a href="#contact" class="work__action-btn" title="Connect"><i class='bx bx-paper-plane'></i></a>
+                            <button class="work__action-btn open-project-modal" data-id="6" title="View Case Study"><i class='bx bx-search-alt'></i></button>
+                        </div>
+                    </div>
+                    <div class="work__details">
+                        <span class="work__tag">M.Sc. 4th Sem • Upcoming Milestone</span>
+                        <h3 class="work__title">Industry Internship & Capstone Project</h3>
+                        <p class="work__desc">Preparing to undertake a comprehensive software engineering internship to gain production experience in Web Development, Python, and IoT systems.</p>
+                        <div class="work__tech">
+                            <span>Software Dev</span>
+                            <span>Python</span>
+                            <span>IoT</span>
+                            <span>Immediate Joiner</span>
+                        </div>
+                        <button class="work__btn-details open-project-modal" data-id="6">
+                            <i class='bx bx-file-find'></i> View Case Study
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <div class="section__header">
+                <span class="section__subtitle">Reach Out To Me</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+
+            <div class="contact__container bd-grid">
+                <!-- Contact Info Cards -->
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Have a project or entry-level opportunity?</h3>
+                    <p class="contact__text">
+                        I am actively looking for Entry-level Data Analyst, Junior Python Developer, or BI Intern roles. Feel free to message me anytime!
+                    </p>
+
+                    <div class="contact__cards">
+                        <div class="contact__card" style="cursor: pointer;" id="contact-email-card" title="Click to copy email">
+                            <div class="contact__card-icon">
+                                <i class='bx bx-mail-send'></i>
+                            </div>
+                            <div class="contact__card-data">
+                                <span class="contact__card-label">Email Me (Click to Copy)</span>
+                                <h4 class="contact__card-value">jayajothi.it@gmail.com</h4>
+                            </div>
+                            <i class='bx bx-copy contact__card-arrow'></i>
+                        </div>
+
+                        <a href="https://www.linkedin.com/in/jay33z" target="_blank" rel="noopener noreferrer" class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class='bx bxl-linkedin'></i>
+                            </div>
+                            <div class="contact__card-data">
+                                <span class="contact__card-label">LinkedIn</span>
+                                <h4 class="contact__card-value">linkedin.com/in/jay33z</h4>
+                            </div>
+                            <i class='bx bx-right-arrow-alt contact__card-arrow'></i>
+                        </a>
+
+                        <a href="https://wa.me/?text=Hello%20Jayajothi,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="contact__card">
+                            <div class="contact__card-icon" style="background: rgba(37, 211, 102, 0.15); color: #25d366;">
+                                <i class='bx bxl-whatsapp'></i>
+                            </div>
+                            <div class="contact__card-data">
+                                <span class="contact__card-label">WhatsApp Quick Chat</span>
+                                <h4 class="contact__card-value">Chat Directly</h4>
+                            </div>
+                            <i class='bx bx-right-arrow-alt contact__card-arrow'></i>
+                        </a>
+
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class='bx bx-map-pin'></i>
+                            </div>
+                            <div class="contact__card-data">
+                                <span class="contact__card-label">Location</span>
+                                <h4 class="contact__card-value">Tamil Nadu, India (Open to Remote)</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact__form-wrapper">
+                    <form action="https://formsubmit.co/jayajothi.it@gmail.com" method="POST" class="contact__form" id="contact-form">
+                        <!-- Form Configuration -->
+                        <input type="hidden" name="_subject" value="🚀 New Message from Portfolio Website!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="">
+
+                        <div class="form__group">
+                            <label for="name" class="form__label">Your Name</label>
+                            <div class="input__box">
+                                <i class='bx bx-user input__icon'></i>
+                                <input type="text" id="name" name="name" placeholder="John Doe" class="contact__input" required>
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">Your Email</label>
+                            <div class="input__box">
+                                <i class='bx bx-envelope input__icon'></i>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" class="contact__input" required>
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label">Your Message</label>
+                            <div class="input__box">
+                                <i class='bx bx-message-detail input__icon textarea__icon'></i>
+                                <textarea name="message" id="message" cols="30" rows="5" placeholder="Hi Jayajothi, I have an opportunity..." class="contact__input contact__textarea" required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="button button--primary button--full" id="contact-submit-btn">
+                            <span>Send Message</span>
+                            <i class='bx bx-send'></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="footer__container bd-grid">
+            <div class="footer__top">
+                <a href="#home" class="footer__logo">
+                    <span class="logo__brand">Jayajothi</span><span class="logo__dot">.</span><span class="logo__badge">data()</span>
+                </a>
+                <p class="footer__tagline">Aspiring Data Analyst committed to deriving clarity from data.</p>
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/jay33z" target="_blank" rel="noopener noreferrer" class="footer__social-link" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" title="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:jayajothi.it@gmail.com" class="footer__social-link" title="Email"><i class='bx bx-envelope'></i></a>
+                </div>
+            </div>
+
+            <div class="footer__divider"></div>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; <span id="current-year"></span> Jayajothi. Crafted with passion & precision.</p>
+                <ul class="footer__links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--===== PROJECT CASE STUDY MODAL =====-->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close Modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag" id="modal-project-tag">Case Study</span>
+                <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h5 class="modal-section-title"><i class='bx bx-target-lock'></i> Problem Statement & Goal</h5>
+                    <p id="modal-project-problem">Problem description goes here.</p>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title"><i class='bx bx-git-repo-forked'></i> Methodology & Workflow</h5>
+                    <p id="modal-project-workflow">Workflow details go here.</p>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title"><i class='bx bx-bulb'></i> Key Business Insights & Results</h5>
+                    <ul class="modal-list" id="modal-project-insights">
+                        <!-- Filled by JS -->
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title"><i class='bx bx-wrench'></i> Technologies & Tools</h5>
+                    <div class="modal-tech-pills" id="modal-project-tech">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="button button--ghost" id="modal-github-link">
+                    <i class='bx bxl-github'></i> View Repository
+                </a>
+                <a href="#contact" class="button button--primary" id="modal-contact-link">
+                    <i class='bx bx-envelope'></i> Inquire This Project
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--===== RESUME PREVIEW MODAL =====-->
+    <div class="modal-overlay" id="resume-modal">
+        <div class="modal-box">
+            <button class="modal-close" id="resume-close-btn" aria-label="Close Modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">Curriculum Vitae</span>
+                <h3 class="modal-title">Jayajothi - Aspiring Data Analyst</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">
+                    M.Sc. IT (Pursuing) • BCA • St. Joseph's College • Tamil Nadu, India • jayajothi.it@gmail.com
+                </p>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h5 class="modal-section-title"><i class='bx bx-user'></i> Professional Objective</h5>
+                    <p>
+                        Highly motivated aspiring Data Analyst & Python/SQL developer with solid foundational education in Information Technology. Seeking an entry-level position where I can utilize my data wrangling, SQL querying, and Power BI visualization skills to extract valuable business metrics.
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title"><i class='bx bx-code-alt'></i> Technical Skills (Beginner Foundation)</h5>
+                    <p>
+                        <strong>Languages:</strong> Python (Pandas, NumPy, Matplotlib, Seaborn), SQL (MySQL), HTML5, CSS3, JavaScript (Basics)<br>
+                        <strong>BI & Tools:</strong> Power BI, MS Excel (Pivot Tables, VLOOKUP), Jupyter Notebook, Google Colab, Git & GitHub
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title"><i class='bx bx-folder'></i> Key Academic & Practical Projects</h5>
+                    <ul class="modal-list">
+                        <li><strong>Smart Current Monitoring System (M.Sc. 3rd Sem):</strong> IoT-based electricity consumption tracking using ESP32, current sensors, PHP, and MySQL with a live web dashboard.</li>
+                        <li><strong>Academic Timetable Management System (M.Sc. 2nd Sem):</strong> Institutional scheduling platform with automated notifications for students and faculty.</li>
+                        <li><strong>AI Chatbot (M.Sc. 1st Sem):</strong> Responsive automated assistant built with HTML, CSS, JavaScript, PHP, and MySQL.</li>
+                        <li><strong>Event Management System (BCA Capstone Group Project):</strong> Collaborative full-stack event booking and management system.</li>
+                        <li><strong>M.Sc. 4th Semester:</strong> Preparing to undertake an industry internship in Web Development, Python, and Software Engineering.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title"><i class='bx bx-graduation'></i> Education & Academic Qualifications</h5>
+                    <ul class="modal-list">
+                        <li>
+                            <strong>M.Sc. Information Technology (June 2025 - March 2027):</strong> Currently Pursuing<br>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">St. Joseph's College of Arts and Science (Autonomous), Cuddalore</span>
+                        </li>
+                        <li style="margin-top: 0.5rem;">
+                            <strong>BCA - Bachelor of Computer Applications (June 2022 - March 2025):</strong> 63%<br>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">St. Joseph's College of Arts and Science (Autonomous), Cuddalore</span>
+                        </li>
+                        <li style="margin-top: 0.5rem;">
+                            <strong>HSC - 12th Grade (June 2022 - March 2023):</strong> 68%<br>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Mother Theresa Matriculation Higher Secondary School, Sathipattu</span>
+                        </li>
+                        <li style="margin-top: 0.5rem;">
+                            <strong>SSLC - 10th Grade (June 2020 - March 2021):</strong> 66%<br>
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Mother Theresa Matriculation Higher Secondary School, Sathipattu</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="mailto:jayajothi.it@gmail.com?subject=Requesting%20Official%20PDF%20Resume%20-%20Jayajothi" class="button button--primary">
+                    <i class='bx bx-download'></i> Request Official PDF Copy
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--===== TOAST NOTIFICATION CONTAINER =====-->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!--===== BACK TO TOP BUTTON =====-->
+    <a href="#home" class="scroll-top" id="scroll-top" title="Back to Top" aria-label="Back to Top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JAVASCRIPT =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
